@@ -73,7 +73,7 @@ export class SMTPService {
       return 'Email is Sent Successfully';
     } catch (error) {
       console.error('Error sending email:', error);
-      return 'Error sending email';
+      return error;
     }
   }
 
